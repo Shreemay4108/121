@@ -1,0 +1,62 @@
+body {
+      font-family: Arial, sans-serif;
+      background: black;
+      color: rgb(30, 255, 0);
+      text-align: center;
+      padding: 50px;
+      overflow: hidden;
+      margin: 0;
+      animation: fadeIn 1s ease-out;
+    }
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+
+    h1 {
+  text-shadow: 0 0 10px rgb(0, 255, 0), 0 0 20px #0f0;
+}
+
+
+
+    canvas#waveform {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100vw;
+      height: 100vh;
+      background: black;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 20px;
+      border-radius: 10px;
+      border: none;
+      background-color: #0000006c;
+      color: rgb(0, 255, 13);
+      cursor: pointer;
+    }
+    button:hover {
+  background-color: rgba(0, 255, 13, 0.2);
+  transform: scale(1.05);
+}
+
+    #output, #reminders, #clock {
+      margin-top: 30px;
+      font-size: 18px;
+    }
+
+    body.dark {
+  background: white;
+  color: black;
+}
+body.dark button {
+  background-color: #ccc;
+  color: #000;
+}

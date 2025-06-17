@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jarvis Web Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="waveform"></canvas>
+
+  <h1>🎙️ Jarvis Web Assistant</h1>
+  <p id="greeting">Loading...</p>
+
+  <button onclick="startListening()">🎤 Click Me to speak</button>
+
+  <p id="clock">Time: --:--</p>
+  <p id="output">Awaiting your command...</p>
+  <p id="reminders">Reminders: None</p>
+
+  <details>
+    <summary>🧠 Try saying...</summary>
+    <ul>
+      <li>"Remind me to drink water at 4:00 PM"</li>
+      <li>"What's the weather in London"</li>
+      <li>"Play Imagine Dragons on Spotify"</li>
+    </ul>
+  </details>
+
+  <button onclick="toggleDarkMode()">🌗 Toggle Dark Mode</button>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
