@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nova AI Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <canvas id="waveform"></canvas>
+
+  <div class="container">
+    <h1>🤖Nova Assistant</h1>
+    <p id="greeting">Initializing...</p>
+
+    <button class="voice-button" onclick="startListening()">🎤 Talk to Nova</button>
+
+    <div class="status">
+      <p id="clock">Time: --:--</p>
+      <p id="output">Awaiting input...</p>
+      <p id="reminders">Reminders: None</p>
+    </div>
+
+    <div class="toggles">
+      <button onclick="toggleDarkMode()">🌓 Theme</button>
+    </div>
+
+    <details class="helper">
+      <summary>💡 Try saying...</summary>
+      <ul>
+        <li>"Remind me to stretch at 5:30 PM"</li>
+        <li>"Play lo-fi on Spotify"</li>
+        <li>"What's the weather in Tokyo?"</li>
+      </ul>
+    </details>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
